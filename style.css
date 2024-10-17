@@ -1,0 +1,99 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f5eded;
+}
+
+.navigation {
+  overflow: hidden;
+  background-color: #000000;
+  display: flex;
+  justify-content: right;
+}
+
+.navigation a {
+  float: left;
+  display: block;
+  color: #f5eded;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navigation a:hover {
+  background-color: #3e3636;
+}
+
+.active {
+  background-color: #d72323;
+}
+
+.navigation a.icon {
+  /* icoon rechts zetten */
+  float: right;
+  /* icoon verbergen */
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+
+  /* toon alleen het eerste anchor child element van .navigation */
+  .navigation a:not(:first-child) {
+      display: none;
+  }
+
+  /* icoon weer tonen wanneer window size kleiner is dan 600px */
+  .navigation a.icon {
+      display: block;
+  }
+
+  /* icoon rechtsboven plaatsen ipv onderaan */
+  .navigation.responsive {
+      position: relative;
+  }
+
+  .navigation.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+  }
+
+  /* alle anchors tonen wanneer class responsive actief is */
+  .navigation.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+  }
+}
+
+.contact{
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
