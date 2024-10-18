@@ -1,20 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
-    <link rel="stylesheet" href="style.css">
-
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
     <nav class="navigation" id="navigation-head">
-        <a class="active" href="index.html">Home</a>
-        <a href="cv.html">CV</a>
-        <a href="experiences.html">Ervaringen</a>
-        <a href="interests.html">Intresses/hobbies</a>
-        <a href="contact.html">Contact</a>
+      <a class="active" href="index.html">Home</a>
+      <a href="cv.html">CV</a>
+      <a href="experiences.html">Ervaringen</a>
+      <a href="interests.html">Intresses/hobbies</a>
+      <a href="contact.html">Contact</a>
+      <a href="#" class="icon" onclick="toggleResponsiveClass()">
+        <i class="fa fa-bars"></i>
+      </a>
     </nav>
     <h1>Home</h1>
-</body>
+
+    <script>
+      function toggleResponsiveClass() {
+        console.log("Hello World");
+        let element = document.getElementById("navigation-head");
+        if (element.className === "navigation") {
+          element.className += " responsive";
+        } else {
+          element.className = "navigation";
+        }
+      }
+    </script>
+  </body>
 </html>

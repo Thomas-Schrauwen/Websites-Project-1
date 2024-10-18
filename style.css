@@ -2,6 +2,7 @@ body {
   margin: 0;
   font-family: Arial, sans-serif;
   background-color: #f5eded;
+  color: #000000;
 }
 
 .navigation {
@@ -12,7 +13,7 @@ body {
 }
 
 .navigation a {
-  float: left;
+  float: right;
   display: block;
   color: #f5eded;
   text-align: center;
@@ -45,7 +46,8 @@ body {
 
   /* icoon weer tonen wanneer window size kleiner is dan 600px */
   .navigation a.icon {
-      display: block;
+    float: right;
+    display: block;
   }
 
   /* icoon rechtsboven plaatsen ipv onderaan */
@@ -65,11 +67,15 @@ body {
       display: block;
       text-align: left;
   }
+
+  .navigation{
+    flex-direction: column;
+  }
 }
 
 .contact{
   border-radius: 5px;
-  background-color: #f2f2f2;
+  background-color: #f5eded;
   padding: 20px;
 }
 
@@ -78,15 +84,16 @@ input[type=text], select {
   padding: 12px 20px;
   margin: 8px 0;
   display: inline-block;
-  border: 1px solid #ccc;
+  border: 1px solid #f5eded;
   border-radius: 4px;
   box-sizing: border-box;
+  background-color: #3e3636;
 }
 
 input[type=submit] {
   width: 100%;
-  background-color: #4CAF50;
-  color: white;
+  background-color: #d72323;
+  color: #f5eded;
   padding: 14px 20px;
   margin: 8px 0;
   border: none;
@@ -94,6 +101,37 @@ input[type=submit] {
   cursor: pointer;
 }
 
-input[type=submit]:hover {
-  background-color: #45a049;
+form{
+  background-color: #3e3636;
+  border-radius: 5px;
+  padding: 20px;
+  color: #f5eded;
+  width: 50%;
+}
+
+section{
+  border: #3e3636 solid 3px;
+  border-radius: 15px;
+  margin: 10px;
+  padding: 10px;
+  overflow: hidden;
+}
+
+section img{
+  float: left;
+  margin-right: 10px;
+  height: auto;
+  width: auto;
+}
+
+h1{
+  margin: 1rem;
+}
+
+.interests{
+  width: 30%;
+}
+
+.interestsList{
+  list-style-type: none;
 }

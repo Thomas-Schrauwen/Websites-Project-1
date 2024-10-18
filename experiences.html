@@ -1,20 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ervaringen</title>
-    <link rel="stylesheet" href="style.css">
-
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
     <nav class="navigation" id="navigation-head">
-        <a href="index.html">Home</a>
-        <a href="cv.html">CV</a>
-        <a class="active" href="experiences.html">Ervaringen</a>
-        <a href="interests.html">Intresses/hobbies</a>
-        <a href="contact.html">Contact</a>
+      <a href="index.html">Home</a>
+      <a href="cv.html">CV</a>
+      <a class="active" href="experiences.html">Ervaringen</a>
+      <a href="interests.html">Intresses/hobbies</a>
+      <a href="contact.html">Contact</a>
+      <a href="#" class="icon" onclick="toggleResponsiveClass()">
+        <i class="fa fa-bars"></i>
+      </a>
     </nav>
     <h1>Ervaringen</h1>
-</body>
+    <main>
+      <section>
+        <a target="_blank" href="https://www.wilms.be/"
+          ><img src="images/Ervaringen.jpg" alt="Logo Wilms"
+        /></a>
+        <h2>Werkervaring</h2>
+        <p>
+          De laatste zes jaar heb ik bij Wilms NV gewerkt als inpakker van
+          rolluiken en toebehoren, hier heb ik ook een tijd bij de bekleving
+          gewerkt, wat dit inhield was een folie op stukken pvc plakken met een
+          machine die eerst precies met wieltjes moest afgesteld worden, na deze
+          uit de machine kwamen nakijken op fouten en deze fouten aanduiden en
+          al dan niet wieltjes verplaatsen voor een beter resultaat. Voor bij
+          Wilms te beginnen heb ik ongeveer vier maanden bij Nike Laakdal
+          gewerkt om kleding volgens bestellingen te verzamelen alvorens deze op
+          een band te deponeren, of deze kledingstukken bij te vullen.
+        </p>
+      </section>
+    </main>
+
+    <script>
+      function toggleResponsiveClass() {
+        console.log("Hello World");
+        let element = document.getElementById("navigation-head");
+        if (element.className === "navigation") {
+          element.className += " responsive";
+        } else {
+          element.className = "navigation";
+        }
+      }
+    </script>
+  </body>
 </html>

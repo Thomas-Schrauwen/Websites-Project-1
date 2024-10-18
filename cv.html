@@ -1,20 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Curriculum vitae</title>
-    <link rel="stylesheet" href="style.css">
-
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
     <nav class="navigation" id="navigation-head">
-        <a href="index.html">Home</a>
-        <a class="active" href="cv.html">CV</a>
-        <a href="experiences.html">Ervaringen</a>
-        <a href="interests.html">Intresses/hobbies</a>
-        <a href="contact.html">Contact</a>
+      <a href="index.html">Home</a>
+      <a class="active" href="cv.html">CV</a>
+      <a href="experiences.html">Ervaringen</a>
+      <a href="interests.html">Intresses/hobbies</a>
+      <a href="contact.html">Contact</a>
+      <a href="#" class="icon" onclick="toggleResponsiveClass()">
+        <i class="fa fa-bars"></i>
+      </a>
     </nav>
-    <h1>Project 1</h1>
-</body>
+    <h1>Curriculum vitae</h1>
+    <!-- <img src="images/cv.jpg" alt="Pasfoto"> -->
+    <main>
+      <section>
+        <h2>Opleiding</h2>
+        <ul>
+          <li>2009 – 2010: Sport Wetenschappen, Leonardo Lyceum ,Hoboken</li>
+          <li>2010 – 2011: Moderne Wetenschappen, Esemnegen, Antwerpen</li>
+          <li>2011 – 2013: Industriële wetenschappen, Don Bosco, Hoboken</li>
+          <li>
+            2013 – 2014: Elektriciteit elektronica, Technisch Instituut Sint
+            Paulus, Mol
+          </li>
+          <li>
+            2014 – 2016: Elektrische instalatietechnieken, Technisch Instituut
+            Sint Paulus, Mol
+          </li>
+          <li>2016 – 2017: Digital arts and entertainment, Howest, Kortrijk</li>
+          <li>2016: Animator attest</li>
+          <li>2015: VCA</li>
+        </ul>
+      </section>
+      <section>
+        <h2>Werkervaing</h2>
+        <ul>
+          <li>2016: 2 weken Stage Bim Packaging Meerhout</li>
+          <li>2016: 6 weken vakantie werk Nike Laakdal</li>
+          <li>2017: 4 weken vakantie werk Nike Laakdal</li>
+          <li>2017: 3 weken IBO Alyatech Meerhout</li>
+          <li>2018: 1 week electricien Electro Geukens Ham</li>
+          <li>2018: 4 maanden en 2 weken magazijnier Nike Laakdal</li>
+          <li>2018 – 2024: 6 jaar Inpakker Wilms NV</li>
+        </ul>
+      </section>
+      <section>
+        <h2>Talenkennis</h2>
+        <ul>
+          <li>Nederlands: moedertaal</li>
+          <li>Engels: goede kennis</li>
+          <li>Frans: basis kennis</li>
+        </ul>
+      </section>
+    </main>
+
+    <script>
+      function toggleResponsiveClass() {
+        console.log("Hello World");
+        let element = document.getElementById("navigation-head");
+        if (element.className === "navigation") {
+          element.className += " responsive";
+        } else {
+          element.className = "navigation";
+        }
+      }
+    </script>
+  </body>
 </html>

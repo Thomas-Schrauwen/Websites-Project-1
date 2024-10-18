@@ -1,20 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Intresses/Hobbies</title>
-    <link rel="stylesheet" href="style.css">
-
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
     <nav class="navigation" id="navigation-head">
-        <a href="index.html">Home</a>
-        <a href="cv.html">CV</a>
-        <a href="experiences.html">Ervaringen</a>
-        <a class="active" href="interests.html">Intresses & hobbies</a>
-        <a href="contact.html">Contact</a>
+      <a href="index.html">Home</a>
+      <a href="cv.html">CV</a>
+      <a href="experiences.html">Ervaringen</a>
+      <a class="active" href="interests.html">Intresses & hobbies</a>
+      <a href="contact.html">Contact</a>
+      <a href="#" class="icon" onclick="toggleResponsiveClass()">
+        <i class="fa fa-bars"></i>
+      </a>
     </nav>
-    <h1>Intresses/Hobbies</h1>
-</body>
+    <h1>Intresses & Hobbies</h1>
+    <main>
+      <section>
+        <img class="interests" src="images/schrijven.jpg" alt="Schrijven" />
+        <h2>Schrijven</h2>
+        <p>
+          Ben hier al jaren af en toe met bezig, ben begonnen toen ik twaalf was
+          en heb altijd verder willen geraken maar heb nog geen volwaardig boek
+          geschreven want ik ben veel te kritisch van mijn schijf werk en zal
+          soms herlezen om dan dingen aan te passen naar wat het moet zijn. Ik
+          schrijf vooral fantasie en sci-fi.
+        </p>
+        <p>
+          De reden waarom ik ben beginnen schrijven is dat ik altijd zelf een
+          wereld wilde creeren. Werelden zoals deze van J.R.R. Tolkien, H.P.
+          Lovecraft, Mark Lawrence, A.C. Salter en andere inspireerde mijn
+          wanneer ik begon met fantasie. Het Warhammer 40K universe is mijn
+          grootste inspiratie bron om sci-fi te schrijven.
+        </p>
+      </section>
+      <section>
+        <img class="interests" src="images/lezen.jpg" alt="Boeken" />
+        <h2>Lezen</h2>
+        <p>
+          Lezen doe ik geregeld, de boeken die mij een fan van lezen hebben
+          gemaakt zijn de Harry Potter boeken en de Grijze Jager serie. Eerlijk
+          gezegd ben ik nog altijd een grote fantasie lezer wat ook samenhangt
+          met mijn schrijven.
+        </p>
+        <h4>Boeken/series</h4>
+        <ul class="interestsList">
+          <li>Lord of the rings (serie)</li>
+          <li>Daughter of chaos (serie)</li>
+          <li>The Poppy wars (serie)</li>
+          <li>The witcher (serie)</li>
+          <li>The complete Tales of H.P. Lovecraft (boek)</li>
+          <li>Rangers apprentice (serie)</li>
+          <li>Harry Potter (serie)</li>
+        </ul>
+      </section>
+    </main>
+
+    <script>
+      function toggleResponsiveClass() {
+        console.log("Hello World");
+        let element = document.getElementById("navigation-head");
+        if (element.className === "navigation") {
+          element.className += " responsive";
+        } else {
+          element.className = "navigation";
+        }
+      }
+    </script>
+  </body>
 </html>
